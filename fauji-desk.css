@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+html,
+body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    overflow-x: hidden;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #252525;
+    border-radius: 10px;
+}
+
+header{
+    height: 150px;
+    width: 100vw;
+    background-color: transparent;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#logo{
+    height: 100px;
+    width: 100px;
+    background-color: transparent;
+    overflow: hidden;
+    position: absolute;
+    left: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: logo_load 0.5s ease-in-out;
+}
+@keyframes logo_load{
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+
+    }
+}
+#logo img{
+    width: 100%;
+}
+#more{
+    height: 50px;
+    width: 50px;
+    background-color: rgba(105, 94, 94, 0.373);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 30px;
+    z-index: 9;
+    box-shadow: 2px 2px 5px;
+}
+#more:hover{
+    background-color: rgba(97, 96, 96, 0.649);
+    box-shadow: inset 2px 2px 5px;
+}
+#more i{
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+#full{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(128, 128, 128, 0.414);
+    position: fixed;
+    top: -100%;
+    z-index: 10;
+    backdrop-filter: blur(20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+#full i{
+    height: 50px;
+    width: 50px;
+    background-color: rgba(105, 94, 94, 0.373);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 30px;
+    font-size: 2rem;
+    cursor: pointer;
+    box-shadow: inset #fff 2px 2px 4px,inset #252525 -2px -2px 2px;
+}
+#full i:hover{
+    box-shadow: inset #252525 2px 0px 2px,inset #d7d0d0 -2px -2px 2px;
+}
+#full h1 a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+#menu{
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 50%;
+}
+#menu img{
+    width: 100%;
+}
+#page1{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #fff;
+}
+#page1 img{
+    width: 100%;
+    height: 100%;
+}
+
+#light1{
+    height: auto;
+    width: 250px;
+    position: absolute;
+    top: 0;
+    right: 50px;
+    animation: load 0.5s ease-in-out;
+}
+
+#light1 img{
+    width: 100%;
+}
+#light2{
+    height: auto;
+    width: 200px;
+    position: absolute;
+    top: 0;
+    right: 125px;
+    animation: load 1s ease-in;
+}
+#light3{
+    height: auto;
+    width: 250px;
+    position: absolute;
+    top: 0;
+    right: 150px;
+    animation: load 0.8s ease-out;
+}
+
+@keyframes load{
+    from{
+        transform: translateY(-100%);
+    }
+    to{
+
+    }
+}
+#page1 #sofa{
+    position: absolute;
+    height: 90vh;
+    width: 60vw;
+    background-color: transparent;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+#page1 #sofa .sofaback{
+    position: absolute;
+    height: 30vw;
+    width: 30vw;
+    background-color: rgba(135, 207, 235, 0.385);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    backdrop-filter: blur(4px);
+}
+#page1 #sofa img{
+    height: auto;
+    position: absolute;
+    bottom: -30px;
+    width: 35rem;
+    background-color: transparent;
+   
+}
+
+#texto{
+    background-color: transparent;
+    position: absolute;
+    right: 2rem;
+    overflow: hidden;
+    padding: 5px;
+    border-left: 2px solid black;
+}
+
+#texto h1{
+    color: #252525;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:xx-large;
+    font-weight: 900;
+    overflow: hidden;
+    animation: teload 0.7s;
+}
+#texto h2{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    animation: teload 0.9s;
+}
+#texto p{ 
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+    animation: teload 0.9s;
+}
+#texto button{
+    color: azure;
+    background-color: #252525;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 5px;
+    animation: teload 0.5s;
+}
+@keyframes teload{
+    from{
+        -moz-transform: scaleX(0);
+        -webkit-transform:  translateX(-100%);
+    }
+    to{
+
+    }
+}
+
+/*soace between page one and page two*/
+.spa{
+    width: 100vw;
+    height: 200px;
+}
+
+
+/*here we declear the second page the products and lot of information */
+#page2{
+    height: auto;
+    width: 100vw;
+    flex-direction: row;
+    overflow: hidden;
+    background-color: transparent;
+}
+.cardmarq{
+    height: auto;
+    width: auto;
+    position: relative;
+    margin: 5px;
+    background-color: red;
+    display: flex;
+    animation: mar 10s infinite;
+}
+#page2 #card{
+    height: 300px;
+    min-width: 250px;
+    background-color: rgba(103, 96, 96, 0.343);
+    border-radius: 20px;
+    margin: 10px;
+    padding: 5px;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+}
+#page2 #card img{
+    width: 100%;
+    height: 70%;
+    background-color: transparent;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#page2 #card .container{
+    width: 100%;
+    height: 30%;
+    background-color: rgba(128, 128, 128, 0.457);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
